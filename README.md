@@ -87,3 +87,26 @@ Check topics with:
 ros2 topic list
 ros2 topic echo /bluerov1/cmd_vel
 ```
+
+## Viewing the Camera
+
+### Using RViz2
+```bash
+rviz2
+
+### Using rqt
+```bash
+rqt_image_view
+
+
+### Terminal 1 – ROS TCP Endpoint (for communication bridge)
+ros2 run ros_tcp_endpoint default_server_endpoint
+
+### Terminal 2 – Keyboard Teleoperation
+ros2 run teleop_twist_keyboard teleop_twist_keyboard \
+  --ros-args -r /cmd_vel:=/bluerov1/cmd_vel
+
+### Terminal 3 – View the camera
+rqt_image_view
+# → select /bluerov1/camera
+   
