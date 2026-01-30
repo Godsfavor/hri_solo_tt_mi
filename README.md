@@ -73,7 +73,7 @@ Make sure the BlueROV2 has a Rigidbody component.
 
 **Robot doesn't move** - Check that ROS endpoint is running and Unity's ROS settings have the right IP (probably 127.0.0.1).
 
-**Rotations don't work** - Make sure you're using the updated BlueRovVeloControl.cs that has avx, avy, and avz variables.
+**Rotations don't work** - Check BlueRovVeloControl.cs has avx, avy, and avz variables.
 
 **Both Unity and ROS trying to control at once** - Only one window should have focus. The KeyboardCmdVelPublisher only publishes when Unity is focused.
 
