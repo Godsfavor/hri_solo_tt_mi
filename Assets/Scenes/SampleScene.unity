@@ -1359,6 +1359,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5594c84b4dedb3ad88fd27b479cf3745, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1084241967}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5594c84b4dedb3ad88fd27b479cf3745, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084241969}
   m_SourcePrefab: {fileID: 100100000, guid: 5594c84b4dedb3ad88fd27b479cf3745, type: 3}
 --- !u!4 &1084241964 stripped
 Transform:
@@ -1412,6 +1415,8 @@ MonoBehaviour:
   lvx: 0
   lvy: 0
   lvz: 0
+  avx: 0
+  avy: 0
   avz: 0
   movementActive: 0
   rb: {fileID: 0}
@@ -1429,6 +1434,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topic: bluerov1/cmd_vel
   blueRovVeloControl: {fileID: 0}
+--- !u!114 &1084241969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084241965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2118836156ef9c255a083ca9ff73043d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topic: /bluerov1/cmd_vel
+  forwardSpeed: 0.5
+  strafeSpeed: 0.5
+  verticalSpeed: 0.5
+  rollSpeed: 0.5
+  pitchSpeed: 0.5
+  yawSpeed: 0.5
+  onlyWhenFocused: 1
 --- !u!1 &1181464064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1396816650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,7 +1725,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topic: /bluerov1/cmd_vel
   forwardSpeed: 0.5
+  strafeSpeed: 0.5
+  verticalSpeed: 0.5
+  rollSpeed: 0.5
+  pitchSpeed: 0.5
   yawSpeed: 0.5
+  onlyWhenFocused: 1
 --- !u!4 &1396816651
 Transform:
   m_ObjectHideFlags: 0
